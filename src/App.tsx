@@ -26,8 +26,10 @@ const App = () => {
 
   return (
     <div className="app bg-gray-20">
-      <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-      <Home />
+      <div>
+        <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+      </div>
+      <Home setSelectedPage={setSelectedPage} />
     </div>
   );
 };

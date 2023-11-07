@@ -13,10 +13,10 @@ type Props = {
 const Navbar = ({selectedPage,setSelectedPage,isTopOfPage}: Props) => {
   const flexBetween = "flex items-center justify-between"
   const [isMenuToggled, setisMenuToggled] = useState<boolean>(false);
-  const navBg = isTopOfPage?"":"bg-primary-200 drop-shadow"
+  const navBg = isTopOfPage?"":"bg-primary-500 drop-shadow"
   return (
     <div>
-      <div className={`  ${navBg} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
+      <div className={`${navBg} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
         <div className={` ${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-16 gap-16`}>
             <img src={Logo} alt="logo"/>

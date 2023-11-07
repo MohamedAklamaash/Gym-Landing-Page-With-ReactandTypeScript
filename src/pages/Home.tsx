@@ -1,6 +1,15 @@
-const Home = () => {
+import { SelectedPage } from "@/constants/Types"
+import HeroSection from "./HeroSection"
+
+type Props = {
+    setSelectedPage:(value:SelectedPage)=>void,
+}
+
+const Home = ({setSelectedPage}: Props) => {
   return (
-    <div className=" "></div>
+    <div className="">
+      <HeroSection setSelectedPage={setSelectedPage}/>
+    </div>
   )
 }
 
