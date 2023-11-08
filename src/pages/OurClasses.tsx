@@ -46,7 +46,6 @@ const classes:Array<OurClassesType> = [
   },
 ];
 
-console.log(classes);
 
   return (
     <section id={SelectedPage.OurClasses} className=" p-5 bg-primary-100 mx-auto min-h-full basis-3/5 w-5/6">

@@ -5,20 +5,21 @@ import contactUsPagePic from "@/assets/ContactUsPageGraphic.png";
 type Props = {
     setSelectedPage:(value:SelectedPage)=>void
 }
-
 const ContactUsPage = ({setSelectedPage}: Props) => {
+    
   return (
-    <div className="mt-10">
-        <motion.div className="p-4"
+    <section id={SelectedPage.ContactUs} className="mt-10">
+        <motion.div 
         onViewportEnter={()=>setSelectedPage(SelectedPage.ContactUs)}
+        className="p-4"
         initial="hidden"
         whileInView="visible"
         transition={{duration:0.8,delay:0.3}}
         variants={{
           hidden:{
             opacity:0,
-            x:-50,
-            y:-100
+            x:50,
+            y:100
           },
           visible:{
             opacity:10,
@@ -69,7 +70,7 @@ const ContactUsPage = ({setSelectedPage}: Props) => {
                 <img src={contactUsPagePic} alt="Pic"/>
             </div>
         </motion.div>
-    </div>
+    </section>
   )
 }
 
