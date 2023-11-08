@@ -3,7 +3,6 @@ import { BenifitsData, SelectedPage } from "@/constants/Types"
 import { benifitsPageData } from "@/constants/texts";
 import {HomeModernIcon,UserGroupIcon,AcademicCapIcon} from "@heroicons/react/24/solid";
 import {motion} from "framer-motion";
-import { useState,useEffect } from "react";
 import BenifitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 import Button from "@/components/Button";
 type Props = {
@@ -29,20 +28,14 @@ const BenifitsPage = ({setSelectedPage}: Props) => {
         title:"Expert and Pro Trainers"
     }
 ]
-  const [enteredViewPort, setenteredViewPort] = useState<boolean>(false);
 
-  const handleEnteringComponenent = ()=>{
-    setSelectedPage(SelectedPage.Benifits);
-  }
 
-  useEffect(()=>{
-    setenteredViewPort(true)
-  },[setSelectedPage]);
+
 
   return (
     <section id="benifits" className="mx-auto min-h-full w-5/6 py-20">
             <motion.div
-                    onViewportEnter={handleEnteringComponenent}
+                    onViewportEnter={()=>setSelectedPage(SelectedPage.Benifits)}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{once:true,amount:0.8}}
@@ -57,7 +50,6 @@ const BenifitsPage = ({setSelectedPage}: Props) => {
                             x:0
                         }
                     }}
-                    onViewportLeave={()=>setenteredViewPort(false)}
                     >
                         <h1 className="basis-3/5 font-montserrat text-[#5D0101] text-3xl font-extrabold ">More Than Just A GYM</h1>
                         <p className="mt-6 my-6">{benifitsPageData.p1}</p>
