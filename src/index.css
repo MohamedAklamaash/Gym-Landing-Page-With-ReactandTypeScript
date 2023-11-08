@@ -9,18 +9,3 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-    height: 100%;
-    width: 100%;
-    font-family: "DM Sans", "sans-serif";
-    color: #718096; /* Example color code for text-gray-500 */
-}
-
-
-
-.app {
-    height: 100%;
-    width: 100%;
-    font-family: "DM Sans", "sans-serif";
-    color: #718096; /* Example color code for text-gray-500 */
-}
