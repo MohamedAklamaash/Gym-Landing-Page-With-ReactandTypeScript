@@ -3,7 +3,7 @@ import { SelectedPage } from "@/constants/Types";
 import { motion } from "framer-motion";
 const Footer = () => {
   return (
-    <footer className="bg-primary-100 py-16">
+    <footer className="bg-primary-100 mx-auto min-h-full w-5/6 py-16">
       <motion.div 
       className="justify-content mx-auto w-5/6 gap-16 md:flex"
         initial="hidden"

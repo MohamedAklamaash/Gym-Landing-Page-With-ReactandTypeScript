@@ -8,7 +8,7 @@ type Props = {
 const ContactUsPage = ({setSelectedPage}: Props) => {
     
   return (
-    <section id={SelectedPage.ContactUs} className="mt-10">
+    <section id={SelectedPage.ContactUs} className="mt-10 mx-auto min-h-full w-5/6 py-20">
         <motion.div 
         onViewportEnter={()=>setSelectedPage(SelectedPage.ContactUs)}
         className="p-4"

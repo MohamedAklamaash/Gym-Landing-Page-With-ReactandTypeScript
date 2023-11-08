@@ -26,7 +26,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app bg-gray-20">
+    <div className=" flex flex-col bg-gray-20">
       <div>
         <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       </div>
