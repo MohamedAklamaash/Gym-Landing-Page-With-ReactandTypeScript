@@ -9,10 +9,3 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    overflow-x: hidden;
-}
-
-.benifits > *{
-    overflow-x: auto;
-}
