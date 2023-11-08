@@ -50,7 +50,7 @@ const Navbar = ({selectedPage,setSelectedPage,isTopOfPage}: Props) => {
         {isMenuToggled && (
             <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] drop-shadow-xl bg-primary-100">
               <div className="flex justify-end p-12">
-                <XMarkIcon 
+                <XMarkIcon
                 onClick={()=>setisMenuToggled(!isMenuToggled)} 
                 className="w-6 h-6 text-gray-400 cursor-pointer"
                 />

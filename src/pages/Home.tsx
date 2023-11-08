@@ -1,6 +1,7 @@
 import { SelectedPage } from "@/constants/Types"
 import HeroSection from "./HeroSection"
 import BenifitsPage from "./BenifitsPage"
+import OurClasses from "@/pages/OurClasses"
 
 type Props = {
     setSelectedPage:(value:SelectedPage)=>void,
@@ -11,6 +12,7 @@ const Home = ({setSelectedPage}: Props) => {
     <div className="">
       <HeroSection setSelectedPage={setSelectedPage}/>
       <BenifitsPage setSelectedPage={setSelectedPage}/>
+      <OurClasses setSelectedPage={setSelectedPage}/>
     </div>
   )
 }
