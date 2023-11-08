@@ -78,17 +78,17 @@ const classes:Array<OurClassesType> = [
               At EvoGym, we believe in creating an immersive fitness experience that goes beyond conventional exercise routines. Our brand is synonymous with innovation and personalized training, catering to every individual's unique fitness journey. We prioritize not just physical transformation but overall well-being, offering a comprehensive range of state-of-the-art equipment, expert trainers, and a vibrant community. Our approach is to inspire a lifestyle where fitness is empowering and enjoyable, ensuring that every step taken within EvoGym is a step toward a healthier, happier you
           </p>
         </motion.div>
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-          <ul className="whitespace-nowrap">
-            {classes.map((item: OurClassesType) => (
-              <ClassesCard
-                name={item.name}
-                description={item.description}
-                image={item.image}
-              />
-            ))}
-          </ul>
-        </div>
+            <div className="mt-10 h-[353px] w-full benifits overflow-y-hidden">
+              <ul className="whitespace-nowrap">
+                {classes.map((item: OurClassesType) => (
+                  <ClassesCard
+                    name={item.name}
+                    description={item.description}
+                    image={item.image}
+                  />
+                ))}
+              </ul>
+            </div>
         </motion.div>
     </section>
   )
